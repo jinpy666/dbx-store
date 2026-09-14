@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ssh",
+  "publisher": "jinpy",
+  "version": "0.4.71",
+  "name": "SSH Terminal",
+  "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.4.71/assets/plugin.svg",
+  "tags": [
+    "ssh",
+    "terminal",
+    "sftp",
+    "remote"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary",
+    "host.filesystem",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ssh/tree/ssh-v0.4.71",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
+  "license": "MIT",
+  "releaseNotes": "First official store release: interactive SSH terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+  "targets": [
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.4.71/io.dbx.ssh-0.4.71-linux-x64.dbxp",
+      "sha256": "225302815d55e7c029d09f477dd9e020ffed6bfdfb5fb06eadbeeeff0871ffee",
+      "size": 5689813
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.4.71/io.dbx.ssh-0.4.71-linux-arm64.dbxp",
+      "sha256": "21b875604849f29dc2b478492719d855c243ad06ce3bc0c40f7ca30ae39fa588",
+      "size": 5554946
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.4.71/io.dbx.ssh-0.4.71-windows-x64.dbxp",
+      "sha256": "afef437271c2b8f14c5b75e5ab9e1df26a76207062b393ff6f2c286c605898d0",
+      "size": 5763289
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.4.71/io.dbx.ssh-0.4.71-darwin-x64.dbxp",
+      "sha256": "a8d2d2fc959419ac8853b83d8b43a14d00ed50d3cbe631f632c4caed75681390",
+      "size": 5588318
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.4.71/io.dbx.ssh-0.4.71-darwin-arm64.dbxp",
+      "sha256": "c6cb84b889e3c01b52e287b7d378780dfff829304a6f263e977a3f5d23785aac",
+      "size": 5236618
+    }
+  ]
+}
