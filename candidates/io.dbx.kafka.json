@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.kafka",
+  "publisher": "jinpy",
+  "version": "0.1.39",
+  "name": "Kafka Studio",
+  "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
+  "icon": "https://github.com/jinpy666/dbx-plugin-kafka/raw/kafka-v0.1.39/assets/plugin.svg",
+  "tags": [
+    "kafka",
+    "streaming",
+    "messaging",
+    "schema-registry"
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-kafka/tree/kafka-v0.1.39",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
+  "license": "MIT",
+  "releaseNotes": "首个商店版本（Kafka Studio）：在一个 DBX 工作台中管理 Apache Kafka——topic/分区/消费组巡检、消息生产与消费（本地聚合 digest、cursor 翻页与流式导出）、消费组 lag 监控与受控 offset 重置、topic/ACL 运维，支持 PLAINTEXT/TLS/SASL（PLAIN/SCRAM）、Kerberos、OAUTHBEARER 与 Confluent/AWS Glue Schema Registry；工作台界面提供 7 种语言（en/zh-CN/zh-TW/es/it/ja/pt-BR）；写操作受只读、allowDelete 与两阶段确认保护，并提供 11 个 MCP 工具供 AI 自动化调用。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Kafka Studio",
+      "description": "在一个工作台中管理 Apache Kafka：查看 topic 与分区、生产和消费消息、过滤与解码 payload、监控消费组 lag、管理 offset 和 ACL、流式消费并导出结果。"
+    },
+    "zh-TW": {
+      "name": "Kafka Studio",
+      "description": "DBX 的 Kafka 主控台外掛：topic 與分割區、訊息生產與消費（過濾/解碼）、消費組（lag 與 offset 重置）、ACL、串流消費與匯出。"
+    },
+    "en": {
+      "name": "Kafka Studio",
+      "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results."
+    },
+    "es": {
+      "name": "Kafka Studio",
+      "description": "Plugin de consola Kafka para DBX: topics y particiones, producción/consumo de mensajes con filtros y decodificación, grupos de consumidores con lag y reset de offsets, ACL, consumo en streaming y exportación."
+    },
+    "it": {
+      "name": "Kafka Studio",
+      "description": "Plugin console Kafka per DBX: topic e partizioni, produzione/consumo di messaggi con filtri e decodifica, gruppi di consumatori con lag e reset degli offset, ACL, consumo in streaming ed esportazione."
+    },
+    "ja": {
+      "name": "Kafka Studio",
+      "description": "DBX 用 Kafka コンソールプラグイン: トピックとパーティション、フィルタリング/デコード付きメッセージ送受信、コンシューマーグループ（ラグと offset リセット）、ACL、ストリーミング消費とエクスポート。"
+    },
+    "pt-BR": {
+      "name": "Kafka Studio",
+      "description": "Plugin de console Kafka para o DBX: tópicos e partições, produção/consumo de mensagens com filtros e decodificação, grupos de consumidores com lag e redefinição de offsets, ACLs, consumo em streaming e exportação."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.39/io.dbx.kafka-0.1.39-darwin-arm64.dbxp",
+      "sha256": "678ebe406ac990cf4a8e38a0fed444f1bb43084883aba29fa032508010034f88",
+      "size": 12786100
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.39/io.dbx.kafka-0.1.39-darwin-x64.dbxp",
+      "sha256": "fca6f679d9cbe62dfc586a847bbf1b82fe3c428adee4f8f023089d7eea98bca1",
+      "size": 13416695
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.39/io.dbx.kafka-0.1.39-linux-arm64.dbxp",
+      "sha256": "e38280d1e79cfa6e97b7c6a6b97fc82ae1ea178a48fe56e3dfad3ea8b8c5c398",
+      "size": 12647100
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.39/io.dbx.kafka-0.1.39-linux-x64.dbxp",
+      "sha256": "62bf760a9328550f418bc22f87a449d41266b2c7d71ebe3747b9318100495dc5",
+      "size": 13510716
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.39/io.dbx.kafka-0.1.39-windows-x64.dbxp",
+      "sha256": "69c8bea68029ed1a0d30fea272418848bee6d265b3a18ed3a39d807fa17dc7f5",
+      "size": 13588621
+    }
+  ]
+}
