@@ -30,32 +30,32 @@
     {
       "target": "darwin-arm64",
       "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.67/io.dbx.ldap-0.1.67-darwin-arm64.dbxp",
-      "sha256": "0e793c35051f77e8df0572258fc4aef945463ae3a4b3f6dcbea6b731673cb414",
-      "size": 5970374
+      "sha256": "fe1ca8095f463ea6995698b651eddfb99f170576bc4b6a855cee4ae0b8c1514e",
+      "size": 5971215
     },
     {
       "target": "darwin-x64",
       "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.67/io.dbx.ldap-0.1.67-darwin-x64.dbxp",
-      "sha256": "9e1e587fc7ca93265f0850ee2ef7830a4789e60f4484c3303399e30c63b4dc19",
-      "size": 6287604
+      "sha256": "c543e8b46bd164f4743eebcdcaa69dce4d7e8e8262988b8e24ef67582425f4c7",
+      "size": 6288437
     },
     {
       "target": "linux-arm64",
       "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.67/io.dbx.ldap-0.1.67-linux-arm64.dbxp",
-      "sha256": "32c9c59fdb693c4732d1b2debb7188f193fa33a7c19b3309d0edecbf4ddcb4de",
-      "size": 5958547
+      "sha256": "888913540226dbdcfe3ff82af473ea0edd575d9134071103cff37ce96a0b3493",
+      "size": 5959381
     },
     {
       "target": "linux-x64",
       "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.67/io.dbx.ldap-0.1.67-linux-x64.dbxp",
-      "sha256": "24e8807229978517a1d57ede7d357c8ededb85cd571437aae0dff4963afce33e",
-      "size": 6375287
+      "sha256": "6bfab5b20d25e7e76c513feb0706b2d221337954a44db1a7238564ae112d1c00",
+      "size": 6376119
     },
     {
       "target": "windows-x64",
       "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.67/io.dbx.ldap-0.1.67-windows-x64.dbxp",
-      "sha256": "c10507a1c9d045e1c01943245c4535b9be84d65e8f49dfe9813286897f0dd5c6",
-      "size": 6426789
+      "sha256": "ce03515b653d570c68db006a53021ebf4aa5ceb1f01678ea7acec637f7213ada",
+      "size": 6427625
     }
   ]
 }
