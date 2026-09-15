@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.files",
+  "publisher": "jinpy",
+  "version": "0.1.58",
+  "name": "Files Studio",
+  "description": "A unified file workspace for local folders, S3-compatible storage, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.58/assets/plugin.svg",
+  "source": "https://github.com/jinpy666/dbx-plugin-files/tree/files-v0.1.58",
+  "releaseNotes": "发布者身份与命名统一：插件 manifest 的 publisher 对齐 dbx-store 发布者 jinpy，各语言显示名统一为 Files Studio（中文不再显示「DBX 文件」）。Identity and naming alignment: the manifest publisher now matches the verified dbx-store publisher (jinpy), and every localized display name is unified as Files Studio.",
+  "targets": [
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.58/io.dbx.files-0.1.58-linux-x64.dbxp",
+      "sha256": "1be90090241be68d9c6d39304cb857a342ab4938deadcc85e3b038e6d72b9a8b",
+      "size": 13608544
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.58/io.dbx.files-0.1.58-linux-arm64.dbxp",
+      "sha256": "3f07d571d4ccd3d8a5b54728c17248619aeadbd562e12465e2e4a0fb41c06dcf",
+      "size": 13916167
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.58/io.dbx.files-0.1.58-darwin-arm64.dbxp",
+      "sha256": "a5ff71bf82aa668659c8abf3b06b902cd797e3a077cfa5a49cb98e85d56784e9",
+      "size": 12767733
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.58/io.dbx.files-0.1.58-darwin-x64.dbxp",
+      "sha256": "675599a2f91910c2c27e56174966b4591c80a9be7ddbaed68694758eada7a49f",
+      "size": 13150189
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.58/io.dbx.files-0.1.58-windows-x64.dbxp",
+      "sha256": "46296f77cdb0a36624fb7263acf92d1b7cb7ea5718900a6cc131c59f891f5383",
+      "size": 12246259
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Files Studio",
+      "description": "统一管理本地文件夹、S3 兼容存储、WebDAV、FTP、SFTP、SMB/CIFS 的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+    }
+  }
+}
