@@ -10,10 +10,10 @@
     {
       "id": "io.dbx.files",
       "name": "Files Studio",
-      "description": "A unified file workspace for local folders, S3-compatible storage, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
+      "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.58/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -26,11 +26,53 @@
         "host.binary",
         "host.filesystem"
       ],
-      "source": "https://github.com/jinpy666/dbx-plugin-files/tree/files-v0.1.58",
+      "source": "https://github.com/jinpy666/dbx-plugin-files/tree/files-v0.1.59",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.58",
+      "latestVersion": "0.1.59",
       "versions": [
+        {
+          "version": "0.1.59",
+          "releasedAt": "2026-09-16T14:21:25.724Z",
+          "releaseNotes": "新增 Google Cloud Storage、Azure Blob、华为 OBS，以及阿里云盘、Dropbox、Google Drive、Koofr、OneDrive、pCloud、Seafile、Yandex Disk 等 OpenDAL 云存储服务，并同步扩充连接表单契约与协议矩阵测试。Adds Google Cloud Storage, Azure Blob, Huawei OBS, plus Alibaba Drive, Dropbox, Google Drive, Koofr, OneDrive, pCloud, Seafile, and Yandex Disk, with expanded connection-form and protocol-matrix coverage.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/io.dbx.files-0.1.59-darwin-arm64.dbxp",
+              "sha256": "18868c2dd6cba0d495f030661ba9aa157ec726c822709a8946945eb7f59b018b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16133663
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/io.dbx.files-0.1.59-darwin-x64.dbxp",
+              "sha256": "09b77ce82874060e8595a852f682e33106b3e06c5b2f0fc8deeaa6cc36337230",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16487838
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/io.dbx.files-0.1.59-linux-arm64.dbxp",
+              "sha256": "d7af80c0a834e0cd0b903efefa3c72609e107b2f11f4c15682f75a27516f0f45",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17492214
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/io.dbx.files-0.1.59-linux-x64.dbxp",
+              "sha256": "f80f00719a923852769c9f728cb7a0d4f41dfd13daf879741363980780074bb4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17053130
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.59/io.dbx.files-0.1.59-windows-x64.dbxp",
+              "sha256": "f47859993ce9b5babb92fc60e9f26022d83850755de85a80d6b3ab5a3c423d9a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16056161
+            }
+          ]
+        },
         {
           "version": "0.1.58",
           "releasedAt": "2026-09-15T05:50:29.744Z",
@@ -119,7 +161,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Files Studio",
-          "description": "统一管理本地文件夹、S3 兼容存储、WebDAV、FTP、SFTP、SMB/CIFS 的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+          "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
         }
       }
     },
@@ -206,7 +248,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.40/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -220,8 +262,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.40",
+      "latestVersion": "0.1.41",
       "versions": [
+        {
+          "version": "0.1.41",
+          "releasedAt": "2026-09-16T14:23:44.820Z",
+          "releaseNotes": "修复 DBX 隧道/代理下的 Kafka 连接：插件改为拨宿主下发的最终端点 runtime.host:port，并在宿主下发 runtime.proxy 时让所有 broker（含 advertised.listeners 发现的）共用同一个 SOCKS5 dialer，admin/生产/一次性消费/流式消费一致生效；代理路径补齐 TLS 握手与按 broker 的 SNI。消费组 offset 重置修复 Kafka 4.x 误报成功的问题（OffsetCommit v10 起以 topic id 标识主题，旧提交被 broker 以 UNKNOWN_TOPIC_ID 拒绝），任一分区被拒即返回错误。Fixes Kafka connections behind DBX transport/proxy layers: the sidecar now dials the host-provided runtime endpoint and, when the host publishes runtime.proxy, routes every broker (including brokers discovered via advertised.listeners) through one SOCKS5 dialer shared by admin, produce, one-shot consume and stream clients, with the TLS handshake and per-broker SNI applied after the proxy CONNECT. Consumer-group offset reset now commits by topic id for Kafka 4.x (OffsetCommit v10+) instead of being rejected as UNKNOWN_TOPIC_ID and misreported as success.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/io.dbx.kafka-0.1.41-darwin-arm64.dbxp",
+              "sha256": "06edf8228e6b6815155979ff284d85ea0eec46cabdd5edd25ce7517f5b248b4e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13261832
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/io.dbx.kafka-0.1.41-darwin-x64.dbxp",
+              "sha256": "0353c848a7e53119fec26d797fdee7191429a0902800afdc230eec9494387c59",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14064672
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/io.dbx.kafka-0.1.41-linux-arm64.dbxp",
+              "sha256": "06606a99899da0969b93472b9877d43c302d96619e21998ae2d4088c25332d7d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12497257
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/io.dbx.kafka-0.1.41-linux-x64.dbxp",
+              "sha256": "fe612f3eb344015c801ecfcfe30851b780886c7db20951f71fcb7b7a21afb703",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13570396
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.41/io.dbx.kafka-0.1.41-windows-x64.dbxp",
+              "sha256": "01a109d32da519690f7fa46af56b59b1f544a75ee418f5b69c0a55e6da80cda3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13661578
+            }
+          ]
+        },
         {
           "version": "0.1.40",
           "releasedAt": "2026-09-16T02:49:26.287Z",
